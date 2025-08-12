@@ -1,0 +1,166 @@
+.home {
+  min-height: 100vh;
+  background-color: #F5E9E2;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 60vh;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 4rem;
+}
+
+.heroContent {
+  flex: 1;
+  max-width: 600px;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #3D3D3D;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: #676767;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: #8C593B;
+  color: #FFE8C5;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(140, 89, 59, 0.3);
+}
+
+.ctaButton:hover {
+  background-color: #744728;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(140, 89, 59, 0.4);
+}
+
+.heroImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.placeholder {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #D9A17E, #BE8666);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  box-shadow: 0 10px 30px rgba(217, 161, 126, 0.3);
+}
+
+.features {
+  padding: 5rem 2rem;
+  background-color: #EBDFD8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #3D3D3D;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+}
+
+.feature {
+  background-color: #F5E9E2;
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.featureIcon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  color: #8C593B;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.feature p {
+  color: #676767;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+  
+  .placeholder {
+    width: 200px;
+    height: 200px;
+    font-size: 4rem;
+  }
+  
+  .features {
+    padding: 3rem 1rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .featureGrid {
+    gap: 1.5rem;
+  }
+  
+  .feature {
+    padding: 2rem 1.5rem;
+  }
+}
